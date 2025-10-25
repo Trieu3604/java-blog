@@ -7,8 +7,6 @@ description: "Sinh viên IT đam mê lập trình, chia sẻ kiến thức về 
 
 # Xin chào! 👋
 
-## Về tôi
-
 Chào bạn, mình là **Lê Đông Triều** – hiện đang học năm cuối ngành **Công nghệ Thông tin** tại **HUTECH TP.HCM**.
 Mình có niềm yêu thích đặc biệt với lập trình, nhất là **Java** và **JavaScript**. Blog này ra đời với mong muốn:
 
