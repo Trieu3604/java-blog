@@ -1,18 +1,23 @@
 ---
 title: "10 dự án nhỏ giúp bạn học Java tốt hơn"
 date: 2025-09-11
+lastmod: 2025-10-26
 slug: /du-an-nho-java/
-description: 10 ý tưởng dự án nhỏ bằng Java giúp luyện tập kỹ năng lập trình thực tế.
-image: images/javaproject.jpg
-caption: Dự án Java nhỏ
+description: "10 ý tưởng dự án nhỏ bằng Java từ cơ bản đến nâng cao, giúp luyện tập kỹ năng lập trình thực tế và xây dựng portfolio cho nhà tuyển dụng."
+image: /images/java-projects.jpg
+caption: "Dự án thực hành Java cho người mới bắt đầu"
+author: "Triều"
 draft: false
-tags: ["Java", "Dự án", "Thực hành"]
-categories: ["Lập trình"]
+tags: ["Java", "Dự án", "Thực hành", "Beginner", "Intermediate"]
+categories: ["Lập trình", "Java"]
+series: ["Học Java"]
+toc: true
+summary: "Bài viết giới thiệu 10 dự án Java từ cơ bản đến nâng cao, cùng với hướng dẫn chi tiết, code mẫu và tài nguyên học tập. Phù hợp cho người mới học Java muốn thực hành và xây dựng portfolio."
 ---
 
-## Giới thiệu .
+## Giới thiệu tếttasdtta
 
-Bạn đã học xong cú pháp Java cơ bản, biết về classes, objects, inheritance... nhưng vẫn cảm thấy thiếu tự tin khi bắt đầu code? Đó là điều hoàn toàn bình thường! Học lý thuyết là một chuyện, nhưng áp dụng vào thực tế là cdfgfdgdfgfdg
+Bạn đã học xong cú pháp Java cơ bản, biết về classes, objects, inheritance... nhưng vẫn cảm thấy thiếu tự tin khi bắt đầu code? Đó là điều hoàn toàn bình thường! Học lý thuyết là một chuyện, nhưng áp dụng vào thực tế là một chuyện khác hoàn toàn.
 
 Cách tốt nhất để thành thạo Java là **làm dự án thực tế**. Không cần phải là dự án lớn, phức tạp - những dự án nhỏ nhưng đầy đủ tính năng sẽ giúp bạn:
 
@@ -219,10 +224,10 @@ public class Calculator {
 ```java
 // Student.java
 public class Student {
-    private String id;
-    private String name;
-    private int age;
-    private double gpa;
+    private String id;        // Mã số sinh viên 
+    private String name;      // Họ tên
+    private int age;         // Tuổi
+    private double gpa;      // Điểm trung bình
 
     public Student(String id, String name, int age, double gpa) {
         this.id = id;
@@ -232,15 +237,34 @@ public class Student {
     }
 
     // Getters
-    public String getId() { return id; }
-    public String getName() { return name; }
-    public int getAge() { return age; }
-    public double getGpa() { return gpa; }
+    public String getId() { 
+        return id; 
+    }
+    
+    public String getName() { 
+        return name; 
+    }
+    
+    public int getAge() { 
+        return age; 
+    }
+    
+    public double getGpa() { 
+        return gpa; 
+    }
 
     // Setters
-    public void setName(String name) { this.name = name; }
-    public void setAge(int age) { this.age = age; }
-    public void setGpa(double gpa) { this.gpa = gpa; }
+    public void setName(String name) { 
+        this.name = name; 
+    }
+    
+    public void setAge(int age) { 
+        this.age = age; 
+    }
+    
+    public void setGpa(double gpa) { 
+        this.gpa = gpa; 
+    }
 
     @Override
     public String toString() {
