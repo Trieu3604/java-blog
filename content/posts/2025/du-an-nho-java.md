@@ -10,7 +10,7 @@ tags: ["Java", "Dự án", "Thực hành"]
 categories: ["Lập trình"]
 ---
 
-## Giới thiệu
+## Giới thiệu ......
 
 Bạn đã học xong cú pháp Java cơ bản, biết về classes, objects, inheritance... nhưng vẫn cảm thấy thiếu tự tin khi bắt đầu code? Đó là điều hoàn toàn bình thường! Học lý thuyết là một chuyện, nhưng áp dụng vào thực tế là câu chuyện hoàn toàn khác.
 
