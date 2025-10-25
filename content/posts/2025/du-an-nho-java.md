@@ -18,7 +18,7 @@ Chào các bạn! Trong hành trình học Java, có một bước ngoặt quan 
 - ✅ Cú pháp cơ bản của Java
 - ✅ Khái niệm OOP (Objects, Classes, Inheritance...)
 - ✅ Collections Framework
-- ✅ Exception Handling
+- ✅ Exception handling
 
 Nhưng vẫn cảm thấy... **lúng túng** khi bắt đầu một dự án thực tế? Đừng lo, đó là điều hoàn toàn bình thường!
 
