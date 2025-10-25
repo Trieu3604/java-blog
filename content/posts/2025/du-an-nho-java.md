@@ -10,9 +10,9 @@ tags: ["Java", "Dự án", "Thực hành"]
 categories: ["Lập trình"]
 ---
 
-## Giới thiệu ......
+## Giới thiệu .
 
-Bạn đã học xong cú pháp Java cơ bản, biết về classes, objects, inheritance... nhưng vẫn cảm thấy thiếu tự tin khi bắt đầu code? Đó là điều hoàn toàn bình thường! Học lý thuyết là một chuyện, nhưng áp dụng vào thực tế là câu chuyện hoàn toàn khác.
+Bạn đã học xong cú pháp Java cơ bản, biết về classes, objects, inheritance... nhưng vẫn cảm thấy thiếu tự tin khi bắt đầu code? Đó là điều hoàn toàn bình thường! Học lý thuyết là một chuyện, nhưng áp dụng vào thực tế là cdfgfdgdfgfdg
 
 Cách tốt nhất để thành thạo Java là **làm dự án thực tế**. Không cần phải là dự án lớn, phức tạp - những dự án nhỏ nhưng đầy đủ tính năng sẽ giúp bạn:
 
