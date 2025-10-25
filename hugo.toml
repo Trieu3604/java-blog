@@ -1,0 +1,270 @@
+baseURL = "https://Trieu3604.github.io/java-blog/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+disableLanguages = ["zh-cn", "zh-tw", "ja", "ko", "ar", "de", "es", "fr", "it", "pt", "ru"]
+title = "Java Blog"
+theme = "hugo-narrow"
+
+hasCJKLanguage = true
+enableEmoji = true
+
+[permalinks]
+  posts = "/posts/:slug/"
+  pages = "/:slug/"
+  
+# pagination
+[pagination]
+  pagerSize = 6
+  path = "page"
+
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+  weight = 1
+
+[languages.vi]
+  languageCode = "vi-VN"
+  languageName = "Tiếng Việt"
+  weight = 2
+
+# Taxonomies configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Main menu
+[[menus.main]]
+  name = "nav.posts"
+  pageRef = "/posts"
+  weight = 20
+  [menus.main.params]
+    icon = "posts"
+
+[[menus.main]]
+  name = "nav.categories"
+  pageRef = "/categories"
+  weight = 30
+  [menus.main.params]
+    icon = "categories"
+
+[[menus.main]]
+  name = "nav.tags"
+  pageRef = "/tags"
+  weight = 40
+  [menus.main.params]
+    icon = "tags"
+
+[[menus.main]]
+  name = "nav.archives"
+  pageRef = "/archives"
+  weight = 50
+  [menus.main.params]
+    icon = "archive"
+
+# Footer menu
+[[menus.footer]]
+  name = "About"
+  pageRef = "/about"
+  weight = 10
+  [menus.footer.params]
+    icon = "about"
+
+[[menus.footer]]
+  name = "Contact"
+  url = "https://google.com"
+  weight = 20
+  [menus.footer.params]
+    icon = "contact"
+
+[[menus.footer]]
+  name = "RSS Feed"
+  url = "/index.xml"
+  weight = 30
+  [menus.footer.params]
+    icon = "rss"
+
+# Social links
+[[menus.social]]
+  name = "GitHub"
+  url = "https://github.com/Trieu3604"
+  weight = 10
+  [menus.social.params]
+    icon = "github"
+
+[[menus.social]]
+  name = "Twitter"
+  url = "https://twitter.com/ledontrieu"
+  weight = 20
+  [menus.social.params]
+    icon = "twitter"
+
+[[menus.social]]
+  name = "Email"
+  url = "mailto:ledontrieu@example.com"
+  weight = 40
+  [menus.social.params]
+    icon = "email"
+
+[params]
+  # Basic site info with SEO
+  description = "Blog về lập trình Java và JavaScript - Chia sẻ kiến thức và kinh nghiệm lập trình"
+  keywords = ["Java", "JavaScript", "Lập trình", "Blog", "Học lập trình"]
+  defaultAuthor = "Le Dong Trieu"
+  language = "vi-VN"
+  shortName = "Java Blog"
+  images = ["/java-blog/images/og-default.svg"]
+
+  [params.logo]
+    image = "/java-blog/images/logo.svg"
+    link = "/java-blog"
+  
+  [params.favicon]
+    svg = "/favicon.svg"
+
+  [params.author]
+    name = "Le Dong Trieu"
+    title = "Software Developer | Java & JavaScript Enthusiast"
+    description = "Đam mê lập trình và chia sẻ kiến thức về Java, JavaScript và công nghệ web."
+    avatar = "/java-blog/images/avatar.svg"
+    
+    [[params.author.social]]
+      name = "GitHub"
+      url = "https://github.com/Trieu3604"
+      icon = "github"
+    
+    [[params.author.social]]
+      name = "Twitter"
+      url = "https://twitter.com/ledontrieu"
+      icon = "twitter"
+    
+    [[params.author.social]]
+      name = "Email"
+      url = "mailto:ledontrieu@example.com"
+      icon = "email"
+
+  # UI Components Control
+  showThemeSwitch = true
+  showDarkModeSwitch = true
+  showLanguageSwitch = true
+  languageSwitchMode = "dropdown"
+
+  # Header sticky effect
+  stickyHeader = true
+
+  # Dock display mode
+  dock = "float"
+
+  # Default color scheme
+  colorScheme = "default"
+  
+  [params.themes.default]
+    name = "Default"
+    order = 1
+  
+  [params.themes.claude]
+    name = "Claude"
+    order = 2
+  
+  [params.themes.bumblebee]
+    name = "Bumblebee"
+    order = 3
+
+  [params.home]
+    recentPostsCount = 5
+
+  [params.post]
+    showRelated = true
+    relatedPostsCount = 3
+    
+    [params.post.license]
+      show = true
+      author = "Le Dong Trieu"
+      name = "CC BY-NC-SA 4.0"
+      description = "Nội dung được chia sẻ theo giấy phép Creative Commons"
+      url = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      displayName = "CC BY-NC-SA 4.0"
+
+  # Comments
+  [params.comments]
+    enabled = false
+    system = "giscus"
+
+  # Analytics
+  [params.analytics]
+    enabled = false
+
+  # KaTeX
+  [params.katex]
+    enabled = true
+    
+    [[params.katex.delimiters]]
+      left = "$$"
+      right = "$$"
+      display = true
+    
+    [[params.katex.delimiters]]
+      left = "$"
+      right = "$"
+      display = false
+
+  # Mermaid
+  [params.mermaid]
+    enabled = true
+
+  # Lightbox
+  [params.lightbox]
+    enabled = false
+    loop = true
+    width = "80vw"
+    height = "80vh"
+
+  # Code block
+  [params.codeblock.collapse]
+    enabled = true
+    defaultState = "expanded"
+    autoCollapseLines = 30
+
+  # Reading progress
+  [params.readingProgress]
+    enabled = true
+    height = 3
+    showOnHomepage = false
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+  
+  [markup.goldmark.renderer]
+    unsafe = true
+  
+  [markup.goldmark.extensions.extras]
+    [markup.goldmark.extensions.extras.delete]
+      enable = true
+    [markup.goldmark.extensions.extras.insert]
+      enable = true
+    [markup.goldmark.extensions.extras.mark]
+      enable = true
+  
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    lineNumbersInTable = false
+    noClasses = false
+    style = "github"
+    tabWidth = 2
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  baseName = "site"
+  isPlainText = true
+
+[module.hugoVersion]
+  extended = true
+  min = "0.146.0"

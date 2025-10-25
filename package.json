@@ -1,0 +1,20 @@
+{
+  "name": "hugo-narrow",
+  "version": "1.0.0",
+  "description": "An open-source Hugo theme.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo"
+  },
+  "keywords": [
+    "hugo",
+    "ssg"
+  ],
+  "author": "hugo hugo",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.1.16"
+  }
+}
