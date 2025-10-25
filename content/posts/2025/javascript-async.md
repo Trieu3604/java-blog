@@ -1,22 +1,36 @@
 ---
-title: "Bất đồng bộ trong JavaScript – Callback, Promise, Async/Await"
-date: 2025-10-01
-slug: /javascript-bat-dong-bo/
-description: Tìm hiểu mô hình bất đồng bộ trong JavaScript, từ Callback đến Promise và Async/Await.
-image: images/javascript-batdongbo.jpg
-caption: Xử lý bất đồng bộ trong JS
+title: "Master Async JavaScript 2025: Từ Callback Hell đến Top-level Await"
+date: 2025-10-25
+slug: /modern-async-javascript/
+description: "Hướng dẫn toàn diện về lập trình bất đồng bộ trong JavaScript hiện đại: Promise, Async/Await, Web Workers và Top-level Await với ví dụ thực tế."
+image: images/javascript-async-2025.jpg
+caption: Modern Asynchronous JavaScript
 draft: false
-tags: ["JavaScript", "Async", "Promise", "Lập trình"]
-categories: ["Lập trình"]
+tags: ["JavaScript", "Async/Await", "Promise", "Web Development", "Performance"]
+categories: ["JavaScript Advanced"]
+toc: true
 ---
 
-## Giới thiệu
+## 🚀 JavaScript Async Evolution 2025
 
-Nếu bạn từng thấy code JavaScript với `setTimeout()`, `fetch()`, hoặc keyword `async/await`, bạn đã gặp **Asynchronous Programming** (lập trình bất đồng bộ). Đây là một trong những khái niệm quan trọng và "khó nhằn" nhất trong JavaScript, nhưng cũng là điều làm cho JavaScript mạnh mẽ.
+> *"Async isn't just about making code faster - it's about making the web better"*
 
-Trong bài viết này, chúng ta sẽ đi từ cơ bản đến nâng cao: từ **Callbacks** đến **Promises** và cuối cùng là **Async/Await** - cách hiện đại nhất để xử lý bất đồng bộ.
+Trong thế giới web hiện đại, **performance** là yếu tố quyết định. Async JavaScript không chỉ là một tính năng - nó là **yêu cầu bắt buộc** cho mọi web developer. 
 
-## Đồng bộ vs Bất đồng bộ
+### 💡 Tại sao cần học Async?
+
+1. **Performance Impact**
+   - 53% users rời trang nếu load > 3s
+   - Google xếp hạng SEO dựa trên tốc độ trang
+   - PWA yêu cầu offline support
+
+2. **Modern Web Features**
+   - Real-time updates
+   - Parallel processing
+   - Background tasks
+   - Service Workers
+
+## 🔄 Event Loop & JavaScript Runtime
 
 ### Synchronous (Đồng bộ)
 
