@@ -990,4 +990,4 @@ Hãy luôn nhớ: **"Premature optimization is the root of all evil"** - Tối �
 
 ---
 
-**Bạn đã từng gặp memory leak chưa?** Chia sẻ kinh nghiệm của bạn trong comments nhé! 💬
+**Bạn đã từng gặp memory leak chưa?** Chia sẻ kih nghiệm của bạn trong comments nhé! 💬
