@@ -1,22 +1,44 @@
 ---
-title: "Về tôi"
-date: 2025-10-18
-image: images/anhaboutme.jpg
-description: "Sinh viên IT đam mê lập trình, chia sẻ kiến thức về Java và JavaScript"
+title: "Chào mừng đến với Blog của Triều"
+date: 2025-10-25
+image: images/profile.jpg
+description: "Chuyện code và những câu chuyện thú vị về con đường trở thành developer"
 ---
 
-# Xin chào VIP PRO SIÊU CẤP! 👋 tếtteawst
+# Xin chào các bạn! �
 
-Chào bạn, mình là **Lê Đông Triều** – hiện đang học năm cuối ngành **Công nghệ Thông tin** tại **HUTECH TP.HCM**.
-Mình có niềm yêu thích đặc biệt với lập trình, nhất là **Java** và **JavaScript**. Blog này ra đời với mong muốn:
+Mình là **Lê Đông Triều** - một developer trẻ đang trong hành trình khám phá thế giới công nghệ. Hiện tại mình đang là sinh viên năm cuối tại **HUTECH TP.HCM**, chuyên ngành **Công nghệ Thông tin**.
 
-- ✍️ Lưu lại kiến thức và kinh nghiệm học tập
-- 🌱 Chia sẻ những điều hữu ích cho cộng đồng
-- 🚀 Rèn luyện kỹ năng viết và tư duy logic
+## 💡 Về Blog Này
 
-## Nội dung blog
+Blog này là nơi mình chia sẻ:
 
-📚 **Chủ đề chính:**
+- 🎯 **Kinh nghiệm thực tế** trong quá trình học tập và làm việc
+- 💻 **Tutorial & Tips** về Java, Spring Boot, và các công nghệ web hiện đại
+- 🌟 **Best practices** và các pattern trong lập trình
+- 🔍 **Review & Phân tích** các công nghệ mới
+- 📚 **Resources** hữu ích cho developer
+
+## 🛠 Tech Stack
+
+Những công nghệ mình thường xuyên sử dụng:
+
+- **Backend**: Java, Spring Boot, Node.js
+- **Frontend**: React.js, JavaScript/TypeScript
+- **Database**: MySQL, MongoDB
+- **Tools**: Git, Docker, VS Code
+- **Cloud**: AWS cơ bản
+
+## 🎯 Mục Tiêu
+
+- Xây dựng một cộng đồng developer Việt Nam năng động
+- Chia sẻ kiến thức thực tế, dễ hiểu cho người mới bắt đầu
+- Cập nhật những xu hướng công nghệ mới nhất
+- Tạo ra nội dung chất lượng bằng tiếng Việt
+
+## � Kết Nối
+
+Các bạn có thể kết nối với mình qua:
 
 **Blog tập trung vào các chủ đề:**
 
@@ -37,12 +59,6 @@ Mình có niềm yêu thích đặc biệt với lập trình, nhất là **Java
 💬 **Facebook**: [Lê Đông Triều](https://www.facebook.com/LeDongTrieu.INFO/)
 
 ---
-
-**Kết nối với mình:**
-
-📧 Email: dongtrieu2410@gmail.com  
-💬 Facebook: [Lê Đông Triều](https://www.facebook.com/LeDongTrieu.INFO/)
-
 ## Góp ý và đề xuất
 
 Bạn có góp ý hoặc muốn đề xuất chủ đề nào đó? Hãy liên hệ với tôi qua email hoặc để lại comment trong các bài viết. Tôi luôn hoan nghênh mọi ý kiến để cải thiện chất lượng nội dung!
