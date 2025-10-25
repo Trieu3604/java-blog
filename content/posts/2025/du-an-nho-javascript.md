@@ -1,34 +1,400 @@
 ---
-title: "10 dự án nhỏ để luyện JavaScript"
-date: 2025-02-11
-slug: /du-an-nho-javascript/
-description: 10 ý tưởng dự án nhỏ bằng JavaScript giúp học viên nắm vững ngôn ngữ nhanh hơn.
+title: "10 JavaScript Projects để Build trong 2025"
+date: 2025-10-25
+slug: /javascript-projects-2025/
+description: "Hướng dẫn chi tiết 10 dự án JavaScript từ cơ bản đến nâng cao với modern features và best practices, giúp xây dựng portfolio ấn tượng."
 image: images/javascriptproject.png
-caption: Dự án JavaScript nhỏ
+caption: Modern JavaScript Development
 draft: false
-tags: ["JavaScript", "Dự án", "Thực hành"]
-categories: ["Lập trình"]
+tags: ["JavaScript", "Web Development", "Frontend", "Projects", "Portfolio"]
+categories: ["JavaScript Development"]
+toc: true
 ---
 
-## Giới thiệu
+## 🚀 JavaScript Projects cho Developer 2025
 
-Bạn đã học xong cú pháp cơ bản của JavaScript nhưng vẫn chưa biết áp dụng kiến thức vào đâu? Đây là vấn đề mà rất nhiều người mới học lập trình gặp phải. Cách tốt nhất để củng cố kiến thức và nâng cao kỹ năng là **làm dự án thực tế**.
+> *"Talk is cheap. Show me the code"* - Linus Torvalds
 
-Trong bài viết này, tôi sẽ giới thiệu **10 dự án nhỏ** phù hợp cho người mới bắt đầu với JavaScript. Mỗi dự án sẽ giúp bạn rèn luyện các kỹ năng quan trọng như thao tác DOM, xử lý sự kiện, làm việc với API, và tư duy logic lập trình.
+Trong thế giới phát triển web hiện đại, **portfolio thực tế** quan trọng hơn bất kỳ chứng chỉ nào. Và cách tốt nhất để xây dựng portfolio? Đó chính là thông qua các **dự án thực tế**.
 
-## Tại sao nên làm dự án nhỏ?
+### 🎯 Những kỹ năng bạn sẽ học được
 
-Trước khi đi vào chi tiết các dự án, hãy cùng tìm hiểu lý do tại sao việc làm dự án nhỏ lại quan trọng:
+1. **Modern JavaScript Features**
+   - ES2025+ syntax và features
+   - Asynchronous programming
+   - Module system
+   - Clean code practices
 
-1. **Học qua thực hành**: Lý thuyết giúp bạn hiểu, nhưng thực hành giúp bạn nhớ lâu
-2. **Xây dựng portfolio**: Các dự án này có thể đưa vào CV khi xin việc
-3. **Phát hiện điểm yếu**: Khi code thực tế, bạn sẽ biết mình cần học thêm gì
-4. **Tăng sự tự tin**: Mỗi dự án hoàn thành là một bước tiến lớn
-5. **Rèn luyện tư duy**: Giải quyết vấn đề thực tế giúp bạn trở thành developer tốt hơn
+2. **Frontend Development**
+   - DOM manipulation
+   - Event handling
+   - API integration
+   - LocalStorage & SessionStorage
+   - Responsive design
 
-## 10 dự án JavaScript cho người mới bắt đầu
+3. **Development Workflow**
+   - Git version control
+   - Code organization
+   - Testing
+   - Deployment
 
-### 1. Đồng hồ số (Digital Clock)
+4. **Real-world Skills**
+   - Problem solving
+   - Code optimization
+   - Debugging
+   - Documentation
+
+## � 10 Modern JavaScript Projects
+
+### 1. Task Flow - Modern Todo App
+
+**Level: Beginner** | **Time: 2-3 days** | [Source Code](https://github.com/example/taskflow)
+
+![Task Flow App Preview](images/taskflow.png)
+
+#### Features
+- ✨ Modern UI với Tailwind CSS
+- 📱 Fully responsive design
+- 🔄 Drag & drop task reordering
+- 🗄️ LocalStorage persistence
+- 🌙 Dark/Light mode
+- 📊 Task statistics & Progress tracking
+
+#### Tech Stack
+```javascript
+// Modern stack for 2025
+const techStack = {
+    frontend: ['HTML5', 'CSS3', 'JavaScript ES2025'],
+    styling: ['Tailwind CSS', 'CSS Custom Properties'],
+    storage: 'LocalStorage API',
+    tooling: ['Vite', 'ESLint', 'Prettier'],
+    deployment: 'Netlify'
+};
+```
+
+#### Code Highlights
+```javascript
+// Modern JavaScript features
+class TaskManager {
+    #tasks = new Map();
+    
+    constructor() {
+        this.loadFromStorage();
+        this.setupEventListeners();
+    }
+    
+    addTask = async (task) => {
+        const id = crypto.randomUUID();
+        this.#tasks.set(id, {
+            ...task,
+            created: new Date(),
+            status: 'pending'
+        });
+        
+        await this.saveToStorage();
+        this.updateUI();
+    }
+}
+
+// Event handling with modern syntax
+const setupDragAndDrop = () => {
+    const taskList = document.querySelector('.task-list');
+    
+    taskList.addEventListener('dragstart', (e) => {
+        if (e.target.matches('.task-item')) {
+            e.target.classList.add('dragging');
+        }
+    });
+};
+```
+
+### 2. WeatherNow - Weather Dashboard
+
+**Level: Intermediate** | **Time: 3-4 days** | [Demo](https://weathernow-demo.netlify.app)
+
+![WeatherNow App](images/weathernow.png)
+
+#### Features
+- 🌡️ Real-time weather data
+- 📍 Geolocation support
+- 📈 Interactive weather charts
+- 🗺️ Interactive map integration
+- 📱 PWA support
+- 🌍 Multiple city tracking
+
+#### Tech Stack
+```javascript
+const weatherApp = {
+    core: ['HTML5', 'CSS3', 'JavaScript'],
+    apis: ['Weather API', 'Geolocation API'],
+    libraries: ['Chart.js', 'Leaflet.js'],
+    features: ['PWA', 'Service Workers'],
+    storage: ['IndexedDB', 'Cache API']
+};
+```
+
+#### Key Implementation
+```javascript
+// Modern async/await with error handling
+class WeatherService {
+    constructor(apiKey) {
+        this.apiKey = apiKey;
+        this.baseUrl = 'https://api.weather.com/v1';
+    }
+
+    async getWeather(lat, lon) {
+        try {
+            const response = await fetch(
+                `${this.baseUrl}/weather?lat=${lat}&lon=${lon}&key=${this.apiKey}`
+            );
+            
+            if (!response.ok) {
+                throw new Error('Weather data fetch failed');
+            }
+
+            const data = await response.json();
+            return this.#processWeatherData(data);
+        } catch (error) {
+            console.error('Weather fetch error:', error);
+            throw error;
+        }
+    }
+
+    #processWeatherData(data) {
+        return {
+            current: {
+                temp: data.current.temp_c,
+                condition: data.current.condition.text,
+                humidity: data.current.humidity,
+                wind: data.current.wind_kph
+            },
+            forecast: data.forecast.forecastday.map(day => ({
+                date: new Date(day.date),
+                maxTemp: day.day.maxtemp_c,
+                minTemp: day.day.mintemp_c,
+                condition: day.day.condition.text
+            }))
+        };
+    }
+}
+
+### 3. ChatStream - Real-time Chat Application
+
+**Level: Advanced** | **Time: 5-7 days** | [GitHub](https://github.com/example/chatstream)
+
+![ChatStream Preview](images/chatstream.png)
+
+#### Features
+- 💬 Real-time messaging
+- 👤 User authentication
+- 📸 Image sharing
+- 🔔 Push notifications
+- 📱 Responsive design
+- 💾 Message history
+
+#### Tech Stack
+```javascript
+const chatApp = {
+    frontend: ['HTML5', 'CSS3', 'JavaScript'],
+    backend: ['Firebase'],
+    realtime: ['WebSocket', 'Firebase Realtime DB'],
+    auth: 'Firebase Auth',
+    storage: 'Firebase Storage',
+    hosting: 'Firebase Hosting'
+};
+```
+
+#### Implementation Highlights
+```javascript
+// Modern WebSocket implementation
+class ChatService {
+    #ws = null;
+    #messageCallbacks = new Set();
+
+    constructor(url) {
+        this.url = url;
+        this.connect();
+    }
+
+    async connect() {
+        try {
+            this.#ws = new WebSocket(this.url);
+            
+            this.#ws.addEventListener('message', (event) => {
+                const message = JSON.parse(event.data);
+                this.#messageCallbacks.forEach(callback => callback(message));
+            });
+
+            await this.#waitForConnection();
+            console.log('Connected to chat server');
+        } catch (error) {
+            console.error('Connection failed:', error);
+            setTimeout(() => this.connect(), 5000);
+        }
+    }
+
+    async sendMessage(message) {
+        if (this.#ws?.readyState !== WebSocket.OPEN) {
+            throw new Error('Connection not ready');
+        }
+
+        return new Promise((resolve, reject) => {
+            try {
+                this.#ws.send(JSON.stringify({
+                    type: 'message',
+                    content: message,
+                    timestamp: new Date().toISOString()
+                }));
+                resolve();
+            } catch (error) {
+                reject(error);
+            }
+        });
+    }
+
+    onMessage(callback) {
+        this.#messageCallbacks.add(callback);
+        return () => this.#messageCallbacks.delete(callback);
+    }
+
+    #waitForConnection() {
+        return new Promise((resolve, reject) => {
+            const timeout = setTimeout(() => {
+                reject(new Error('Connection timeout'));
+            }, 5000);
+
+            this.#ws.addEventListener('open', () => {
+                clearTimeout(timeout);
+                resolve();
+            }, { once: true });
+        });
+    }
+}
+
+### 4. ShopSmart - E-commerce Frontend
+
+**Level: Advanced** | **Time: 7-10 days** | [Live Demo](https://shopsmart-demo.vercel.app)
+
+![ShopSmart Preview](images/shopsmart.png)
+
+#### Features
+- 🛍️ Product catalog with filtering
+- 🔍 Advanced search with autocomplete
+- 🛒 Shopping cart with localStorage
+- 💳 Checkout process simulation
+- ⭐ Product reviews & ratings
+- 📱 Fully responsive design
+
+#### Tech Stack
+```javascript
+const ecommerceApp = {
+    frontend: ['HTML5', 'CSS3', 'Modern JavaScript'],
+    ui: ['Custom Components', 'CSS Grid/Flexbox'],
+    state: ['Custom Store Implementation'],
+    api: ['REST API Integration'],
+    performance: ['Lazy Loading', 'Image Optimization'],
+    testing: ['Jest', 'Testing Library']
+};
+```
+
+#### Key Features Implementation
+```javascript
+// Modern state management
+class Store {
+    #state = new Proxy(
+        {
+            products: [],
+            cart: [],
+            filters: {
+                category: null,
+                priceRange: { min: 0, max: Infinity },
+                rating: null
+            }
+        },
+        {
+            set: (target, prop, value) => {
+                target[prop] = value;
+                this.#notifySubscribers();
+                return true;
+            }
+        }
+    );
+
+    #subscribers = new Set();
+
+    subscribe(callback) {
+        this.#subscribers.add(callback);
+        return () => this.#subscribers.delete(callback);
+    }
+
+    #notifySubscribers() {
+        this.#subscribers.forEach(callback => callback(this.#state));
+    }
+
+    // Advanced filtering with modern array methods
+    getFilteredProducts() {
+        return this.#state.products
+            .filter(product => {
+                const { category, priceRange, rating } = this.#state.filters;
+                return (
+                    (!category || product.category === category) &&
+                    (product.price >= priceRange.min && product.price <= priceRange.max) &&
+                    (!rating || product.rating >= rating)
+                );
+            })
+            .sort((a, b) => b.rating - a.rating);
+    }
+
+    // Cart operations with immutable updates
+    addToCart(product, quantity = 1) {
+        const existingItem = this.#state.cart
+            .find(item => item.id === product.id);
+
+        if (existingItem) {
+            this.#state.cart = this.#state.cart.map(item =>
+                item.id === product.id
+                    ? { ...item, quantity: item.quantity + quantity }
+                    : item
+            );
+        } else {
+            this.#state.cart = [
+                ...this.#state.cart,
+                { ...product, quantity }
+            ];
+        }
+
+        this.#saveCartToStorage();
+    }
+}
+            if (!response.ok) {
+                throw new Error('Weather data fetch failed');
+            }
+
+            const data = await response.json();
+            return this.#processWeatherData(data);
+        } catch (error) {
+            console.error('Weather fetch error:', error);
+            throw error;
+        }
+    }
+
+    #processWeatherData(data) {
+        return {
+            current: {
+                temp: data.current.temp_c,
+                condition: data.current.condition.text,
+                humidity: data.current.humidity,
+                wind: data.current.wind_kph
+            },
+            forecast: data.forecast.forecastday.map(day => ({
+                date: new Date(day.date),
+                maxTemp: day.day.maxtemp_c,
+                minTemp: day.day.mintemp_c,
+                condition: day.day.condition.text
+            }))
+        };
+    }
+}
 
 **Độ khó**: ⭐ Dễ  
 **Thời gian**: 30-60 phút
