@@ -618,7 +618,7 @@ JavaScript không chỉ là ngôn ngữ của web - nó là nền tảng của t
 - Dễ học, dễ bắt đầu
 - Chạy mọi nơi (browser, server, mobile, desktop)
 - Cộng đồng lớn, nhiều thư viện
-- Nhu cầu tuyển dụng cao
+- Nhu cầu tuyển dụng ca
 
 **Điểm yếu:**
 - Kiểu dữ liệu động có thể gây nhầm lẫn
