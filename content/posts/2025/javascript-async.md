@@ -22,7 +22,7 @@ Trong thế giới web hiện đại, **performance** là yếu tố quyết đ�
 1. **Performance Impact**
    - 53% users rời trang nếu load > 3s
    - Google xếp hạng SEO dựa trên tốc độ trang
-   - PWA yêu cầu offline support
+   - PWA yêu cầu offline suppor
 
 2. **Modern Web Features**
    - Real-time updates
